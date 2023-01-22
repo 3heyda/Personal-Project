@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+  margin: 0;
+}
+
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  width: max-content;
+}
+
+/* Menu Level 2 */
+header nav > ul > li > ul {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+nav li:hover > a {
+  color: blueviolet;
+}
+
+header nav > ul > li > ul > li > a {
+  padding-right: 50px;
+}
+header nav > ul > li:hover > ul {
+  display: block;
+}
+
+header nav > ul > li > ul > li > ul {
+  display: none;
+  background-color: rgb(242, 242, 242);
+  position: absolute;
+  top: 0%;
+  right: 100%;
+}
+
+header nav > ul > li > ul > li:hover > ul {
+  display: block;
+}
+
+header nav > ul > li > ul > li > ul > li > a {
+  padding-right: 30px;
+}
+
+/* Main */
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thisisme-describe span {
+  font-size: 14px;
+  color: #222222;
+}
+
+.thisisme-describe h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.thisisme-describe p {
+  font-size: 14px;
+  color: #777777bf;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+
+.thisisme-describe a {
+  border: none;
+  font-weight: bold;
+  margin-top: 16px;
+  padding: 13px 30px;
+  background-image: linear-gradient(
+    to right,
+    rgba(137, 43, 226, 0.87),
+    rgb(59, 161, 239)
+  );
+  color: white;
+}
+
+.thisisme-describe a:hover {
+  box-shadow: 0px 15px 16px rgba(95, 48, 146, 0.179);
+}
+
+/* Main level 2 */
+#about {
+  background-color: rgb(255, 255, 255);
+}
+
+.about-img img {
+  margin-left: 0;
+  margin-top: 80px;
+  margin-right: 70px;
+}
+
+.personal-details span {
+  font-size: 13px;
+  color: #222222;
+}
+.personal-details h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.personal-details p {
+  font-size: 15px;
+  color: #777777bf;
+  line-height: 22px;
+  margin-bottom: 50px;
+  white-space: break-space;
+}
+.personal-details a {
+  font-weight: 700;
+  background: linear-gradient(
+    to right bottom,
+    rgba(145, 58, 226, 0.87),
+    rgb(43, 153, 226)
+  );
+  padding: 15px 40px;
+  color: white;
+  font-size: 16px;
+}
+.personal-details a:hover {
+  box-shadow: 0px 15px 16px rgba(95, 48, 146, 0.179);
+}
+
+/* main level 3 */
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* mainup-3 */
+.offered-services {
+  text-align: center;
+}
+.offered-services h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 2px;
+}
+
+.offered-services p {
+  text-align: center;
+  color: rgba(34, 34, 34, 0.611);
+  /* white-space: break-spaces; */
+}
+
+/* mainbottom-3 */
+
+.single-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-top, 
+.div-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+} 
+
+.single-services div > div{
+  margin: 20px;
+}
+.single-services div div > div {
+  
+  width: max-content;
+}
+
+.single-services > div h4:hover{
+  color: rgba(137, 43, 226, 0.861)43, 226, 0.861  ;
+
+}
+
+.div-top  img{
+  width: 30px;
+}
+.div-bottom img{
+  width: 30px;
+}
+
+.single-services h4{
+  font-size: large;
+  font-weight: bold;
+}
+.single-services p{
+  font-size: 15px;
+  color: #777777bf;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+
+/* main section 4 */
+#statics {
+  display: inline-block;
+  background-image: linear-gradient( to right blue, blueviolet );
+}
+
+#statics h1 p{
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}

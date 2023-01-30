@@ -54,13 +54,24 @@ nav li {
   width: max-content;
 }
 
+ header nav > ul > li {
+  color: blueviolet;
+}
 /* Menu Level 2 */
 header nav > ul > li > ul {
-  display: none;
+  display: block;
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 100%;
   right: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0.5s;
+
 }
 
 nav li:hover > a {
@@ -70,13 +81,18 @@ nav li:hover > a {
 header nav > ul > li > ul > li > a {
   padding-right: 50px;
 }
+
+
+
 header nav > ul > li:hover > ul {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  
 }
 
 header nav > ul > li > ul > li > ul {
   display: none;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(255, 253, 253);
   position: absolute;
   top: 0%;
   right: 100%;
@@ -90,6 +106,12 @@ header nav > ul > li > ul > li > ul > li > a {
   padding-right: 30px;
 }
 
+header nav > ul > li{
+  color: rgb(147, 76, 213);
+}
+.fa-angle-down{
+  margin: 3px;
+}
 /* Main */
 
 main .container {
@@ -194,11 +216,9 @@ main .container {
 .offered-services p {
   text-align: center;
   color: rgba(34, 34, 34, 0.611);
-  /* white-space: break-spaces; */
 }
 
 /* mainbottom-3 */
-
 .single-services {
   display: flex;
   align-items: center;
@@ -212,21 +232,21 @@ main .container {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  
+  text-align: center; 
 } 
 
 .single-services div > div{
   margin: 20px;
 }
-.single-services div div > div {
-  
-  width: max-content;
+
+#services {
+  transition-property: all;
+  transition-delay: 0.4s;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
 }
-
-.single-services > div h4:hover{
-  color: rgba(137, 43, 226, 0.861)43, 226, 0.861  ;
-
+#services{
+  color: rgb(255, 0, 0);
 }
 
 .div-top  img{
@@ -250,12 +270,113 @@ main .container {
 
 /* main section 4 */
 #statics {
-  display: inline-block;
-  background-image: linear-gradient( to right blue, blueviolet );
+  background: linear-gradient(
+    to right ,
+    rgba(145, 58, 226, 0.757),
+    rgb(43, 153, 226)
+  );
+  text-align: center;
 }
 
-#statics h1 p{
+.statics-item {
+  margin-left: 80px;
+}
+.statics-item div{
   display: inline-block;
+  margin: 40px;
+}
+
+.statics-item div h1 ,p{
+  color: white;
+} 
+.statics-item h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.statics-item p{
+  margin: 0;
+}
+
+
+/* section 4 or 5 */
+
+.project-title {
+  text-align: center;
+  margin: 5%;
+}
+.project-title h1{
+  margin: 30px 0;
+  font-size: 30px ;
+  font-weight: 600; 
+  line-height: 2px;
+}
+.project-title p{
+  color: rgba(34, 34, 34, 0.51);
+}
+
+.project-items ul > li a:hover {
+  color: blueviolet;
+}
+
+.project-items ul{
+  text-align: center;
+  margin-right: 20px;
+  
+}
+.project-items ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.projects-pics {
+  
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  width: 1300px;
+  margin: 0 auto;
 }
+
+.projects-pics, .feedback-about-me p{
+  color: black;
+}
+
+
+
+/* Client’s Feedback About Me */
+#Clients-feedback{
+  background-color: rgba(215, 215, 215, 0.395);
+  height: 500px;
+}
+.feedback-about-me > .feedback-title{
+ text-align: center;
+ margin: 60px;
+}
+.feedback-about-me > .feedback-title h1 {
+  font-size: 30px;
+  font-weight: 600;
+} 
+
+.user-feedback{
+  background-color: rgb(255, 255, 255) ;
+  width: 400px;
+  display: inline-block;
+  margin: 20px;
+  padding: 15px;
+}
+.user-feedback h6 a{
+  font-size: 15px;
+  font-weight: 600;
+}
+.user-feedback a:hover{
+  color:blueviolet;
+}
+.user-feedback img{
+  width: 40px;
+}
+
+
+
+
